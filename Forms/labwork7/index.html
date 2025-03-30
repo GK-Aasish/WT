@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Summary</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            font-family: 'Poppins', sans-serif;
+        }
+        .form_container {
+            background-color: whitesmoke;
+            width: 80%;
+            padding: 20px;
+            box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            font-family: 'Poppins', sans-serif;
+        }
+        .top {
+            display: flex;
+        }
+        .top_left, .top_right {
+            display: flex;
+            width: 50%;
+            padding: 10px;
+            justify-content: space-between;
+        }
+        .input_left, .input_right {
+            border-left: 1px solid black;
+            padding-left: 5px;
+        }
+        input{
+            width: 250px;
+            height: 25px;
+            font-family: 'Poppins', sans-serif;
+        }
+        .top_right input {
+            margin-bottom: 15px;
+        }
+        .dontknow{
+            margin-bottom: 0;
+            display: flex;
+            justify-content: space-around;
+            width: 250px;
+            font-size: 18px;
+        }
+        .dk1{
+            width: 50%;
+            border-radius: 10px 10px 0 0;
+            border: 1px solid #333;
+            border-bottom: 0;
+            text-align: center;
+        }
+        .bottom{
+            border-top: 1px solid #333;
+            padding-top: 10px;
+        }
+        table{
+            padding-left: 40px;
+        }
+        th{
+            background-color: #D3D3D3;
+        }
+        h4 {
+            margin-top: 0;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .bottom_again{
+            display: flex;
+        }
+        .blank{
+            width: 80%;
+        }
+        .summary-container {
+            width: 300px;
+            padding: 15px;
+        }
+        .summary-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .summary-total {
+            font-weight: bold;
+            font-size: 18px;
+            border-top: 1px solid #333;
+            padding-top: 5px;
+        }
+        .notes input {
+            width: 500px;
+            height: 80px;
+            font-family: 'Poppins', sans-serif;
+        }
+        .notes h4 {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <section class="form_container">
+        <form action="">
+            <div class="top">
+                <div class="top_left">
+                    <div class="detail_left">
+                        <h4>Customer</h4>
+                        <h4>Shipping Address</h4>
+                    </div>
+                    <div class="input_left">
+                        <input type="text" name="customer_name" id="customer_name"><br>
+                        <p>Avenue van Niwuwenhyselan 5</p>
+                        <p>1160 Brussels</p>
+                        <p>Belgium</p>
+                    </div>
+                </div>
+                <div class="top_right">
+                    <div class="details_right">
+                        <h4>Order Reference</h4>
+                        <h4>Date</h4>
+                        <h4>Payment Term</h4>
+                        <h4>Pricelist</h4>
+                    </div>
+                    <div class="input_right">
+                        <input type="text" name="order_reference" id="order_reference"><br>
+                        <input type="text" name="date" id="date"><br>
+                        <input type="text" name="payment_term" id="payment_term"><br>
+                        <input type="text" name="pricelist" id="pricelist"><br>
+                    </div>
+                </div>
+            </div>
+            <div class="dontknow">
+                <div class="dk1">
+                    <p>Summary</p>
+                </div>
+                <div class="dk2">
+                    <p>More Details</p>
+                </div>
+            </div>
+            <div class="bottom">
+                <table class="table" width="100%" cellpadding="5" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Quantity</th>
+                            <th>Unit Price</th>
+                            <th>Discount</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Macbook Air 13" 128GB</td>
+                            <td><input type="text" value="1"></td>
+                            <td>1279.99€</td>
+                            <td><input type="text" value="0"></td>
+                            <td>1279.99€</td>
+                        </tr>
+                        <tr>
+                            <td>Router</td>
+                            <td><input type="text" value="1"></td>
+                            <td>49.99€</td>
+                            <td><input type="text" value="0"></td>
+                            <td>49.99€</td>
+                        </tr>
+                        <tr>
+                            <td>Network installation (hours)</td>
+                            <td><input type="text" value="2"></td>
+                            <td>80.00€</td>
+                            <td><input type="text" value="0"></td>
+                            <td>160.00€</td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="Item"></td>
+                            <td><input type="text" placeholder="Quantity"></td>
+                            <td><input type="text" placeholder="Unit Price"></td>
+                            <td><input type="text" placeholder="Discount"></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="bottom_again">
+                <div class="blank"></div>
+                <div class="summary-container">
+                    <div class="summary-item"><span>Subtotal:</span> <span>1489.98€</span></div>
+                    <div class="summary-item"><span>Taxes (10%):</span> <span>148.99€</span></div>
+                    <div class="summary-item summary-total"><span>Total:</span> <span>1638.97€</span></div>
+                </div>
+            </div>
+            <div class="notes">
+                <h4>Notes</h4>
+                <input type="text" name="Notes" id="notes">
+            </div>
+        </form>
+    </section>
+</body>
+</html>
