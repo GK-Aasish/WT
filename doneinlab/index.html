@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        background-color: crimson;
+        height: 100vh;
+        display: flex;
+    }
+    form{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        padding: 10px;
+        background-color: whitesmoke;
+        box-shadow: 5px 10px rgba(0, 0, 0, 0.02);
+        border-radius: 10px;
+    }
+    .top{
+        display: flex;
+        justify-content: space-between;
+    }
+    .right{
+        width: 48%;
+    }
+    .left{
+        width: 48%;
+    }
+    #address{
+        height: 60px;
+    }
+    #btn{
+        background-color: crimson;
+        margin-top: 20px;
+        height: 30px;
+    }
+    input, select{
+        margin-bottom: 10px;
+    }
+    h3{
+        text-align: center;
+        font-size: 22px;
+    }
+</style>
+<body>
+        <form action="">
+            <h3>Student Registration Form</h3>
+            <label for="student_name">Student Name</label>
+            <input type="text" name="student_name" id="student_name"><br>
+            <div class="top">
+                <div class="left">
+                    <label for="mobile_number">Mobile Number</label><br>
+                    <input type="number" name="mobile_number" id="mobile_number"><br>
+                    <label for="father_name">Father name</label><br>
+                    <input type="text" name="father_name" id="father_name"><br>
+                    <label for="course">Course</label><br>
+                    <select name="course" id="course">
+                        <option value="blank">---</option>
+                        <option value="bca">BCA</option>
+                        <option value="bba">BBA</option>
+                        <option value="bsw">BSW</option>
+                        <option value="bbs">BBS</option>
+                    </select><br>
+                    <label for="gender">Gender</label><br>
+                    <input type="radio" name="gender" id="male">Male
+                    <input type="radio" name="gender" id="female">Female
+                </div>
+                <div class="right">
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="email"><br>
+                    <label for="mother_name">Mother Name</label><br>
+                    <input type="text" name="mother_name" id="mother_name"><br>
+                    <label for="dob">Date of Birth</label><br>
+                    <input type="date" name="dob" id="dob"><br>
+                    <label for="profile">Student Profile</label><br>
+                    <input type="file" name="student_profile" id="student_profile">
+                </div>
+            </div>
+            <div class="selection">
+                <label for="branch">Select Branch</label><br>
+                <input type="checkbox" name="branch" id="cse">CSE
+                <input type="checkbox" name="branch" id="it">IT
+                <input type="checkbox" name="branch" id="ecf">ECF
+                <input type="checkbox" name="branch" id="civil">Civil
+            </div>
+            <label for="address">Address</label>
+            <input type="text" name="address" id="address">
+            <input type="submit" name="submit" id="btn">
+        </form>
+</body>
+</html>

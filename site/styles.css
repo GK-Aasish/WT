@@ -1,0 +1,29 @@
+*{
+    font-family: 'poppind',sans-serif;
+}
+body{
+    display: flex;
+    height: 100vh;
+}
+.side_navigation{
+    background-color: aqua;
+    border: 2px solid gold;
+    width: 30%;
+}
+.container{
+    border: 2px solid gold;
+    width: 70%;
+    background-color: blueviolet;
+}
+.navigations{
+    background-color: red;
+}
+.navigations ul{
+    list-style: none;
+}
+.navigations ul li{
+    background-color: blue;
+    border-radius: 20px;
+    height: 35px;
+
+}
