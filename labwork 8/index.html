@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>labwork1</title>
+</head>
+<body>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 200px 0 200px;
+        }
+        .right ul{
+            gap: 30px;
+            display: flex;
+            align-items: center;
+            li{
+                list-style: none;
+            }
+            li a{
+                text-decoration: none;
+                color: #333333;
+            }
+            a:hover{
+                color: purple;
+            }
+        }
+        .btn{
+            background-color: aqua;
+            padding: 10px;
+            border-radius: 25px;
+            border: 0;
+        }
+        #header_btn{
+            background-color: aqua;
+            padding: 10px;
+            border-radius: 10px;
+            border: 0;
+        }
+        .main{
+            padding: 0 40px 0 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .main-l{
+            width: 400px;
+        }
+        .main-R{
+            width: 50%;
+        }
+        img{
+            width: 800px;
+        }
+        .hero{
+            color: purple;
+        }
+    </style>
+  <header>
+    <div class="left">
+        <h1>CoHost</h1>
+    </div>
+    <div class="right">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Domain</a></li>
+            <li><a href="#">Hosting</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <button id="header_btn">Get Started</button>
+        </ul>
+    </div>
+</header> 
+    <section class="main">
+        <div class="main-l">
+            <p class="hero">ISOMETRIC HOSTING</p>
+            <h1>Design<br>Devlopment<br>Hosting</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, a sequi numquam ex error facilis iste corporis consequuntur quam facere.</p>
+            <button class="btn">Get In Touch</button>
+        </div>
+        <div class="R">
+            <img src="img/WhatsApp Image 2025-04-29 at 10.05.07_7c76504f.jpg" alt="Hero">
+        </div>
+    </section>
+</body>
+</html>
